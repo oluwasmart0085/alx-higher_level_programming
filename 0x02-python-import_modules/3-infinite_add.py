@@ -8,5 +8,6 @@ def main():
         sum += int(argv[i])
     print(sum)
 
+
 if __name__ == "__main__":
     main()
