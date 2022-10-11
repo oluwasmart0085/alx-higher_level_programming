@@ -1,9 +1,9 @@
 #!/usr/bin/python3
+"""class Square that defines a square by: (based on 0-square.py)"""
+
+
 class Square:
-    """Represents a square"""
-
-
-
+    """class Square that defines a square"""
     def __init__(self, size):
-        """Initializes the data"""
+        """Private instance attribute: size"""
         self.__size = size
