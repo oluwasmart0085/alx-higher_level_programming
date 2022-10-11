@@ -5,6 +5,8 @@ import math
 class MagicClass:
     """Define a magic class."""
 
+
+
     def __init__(self, radius=0):
         """Initialize MagicClass."""
         self.__radius = 0
