@@ -4,22 +4,19 @@ Created on Sat Aug  8 09:05:11 2020
 
 @author: Robinson Montes
 """
+import sqlalchemy
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import relationship
 
 Base = declarative_base()
 
 
 class State(Base):
     """
-    state class for use with sqlalchemy inherits from sqlalchemy
-    declarative_base
-
-    Attributes:
-        Base (class)
+    A new representation of a state table
     """
-
     __tablename__ = 'states'
-
     id = Column(Integer, primary_key=True)
     name = Column(String(128), nullable=False)
+    cities = relationship("City", backref="state")
